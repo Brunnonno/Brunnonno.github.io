@@ -1,0 +1,90 @@
+body{
+    background-image: url("../imgs/bd.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+
+
+.fundo{
+    background-color: white;
+    padding-bottom: 1px;
+}
+
+.menu-principal{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    text-align: left;
+}
+.menu-principal li{
+    display: inline-block;
+    padding-right: 5vw;
+}
+
+
+.slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 1;}
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 2;}
+
+
+.slide img{
+    width: 100%;
+    height: auto;
+}
+.slide-show{
+  overflow: hidden;
+}
+
+.slides-list{
+    padding: 0;
+    margin: 0;
+    --selected-item: 0;
+    --total-items: 4;
+    list-style-type: none;
+    position: relative;    left: calc(var(--selected-item) * -62%);
+    width: calc(var(--total-items) * 60%);
+    transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;  
+}
+
+.texto {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.git {
+    margin-left: 5%;
+    margin-right: 5%;
+      
+}
+
+.git img{
+   
+        padding: 1px;
+        width: auto;
+        height: 300px;
+    
+}
+
+.texto img{
+    padding: 1px;
+    width: auto;
+    height: 300px;
+}
+
+a img{
+    width: 10%;
+    height: auto;
+
+}
