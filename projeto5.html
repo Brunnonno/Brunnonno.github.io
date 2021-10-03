@@ -18,7 +18,10 @@
         -moz-user-select: none;
         user-select: none;
       }
-
+      nav a img {
+      width: 40px;
+      padding: 5px;
+}
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -49,11 +52,21 @@
         </div>
       </div>
       <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
-          <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            <strong>Bruno Naiser</strong>
-          </a>
+        
+        <div>
+          <section class="container">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                 <a href="index.html" class="navbar-brand d-flex align-items-center" menu>
+                    <img alt="Brand" src="img/NOno_branco.png" class="img-responsive">Bruno Naiser
+                 </a>
+               </div>
+             </div>
+           </nav>
+          </section>
+        </div>
+          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
